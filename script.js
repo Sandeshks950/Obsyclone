@@ -40,5 +40,22 @@ function loader() {
   tl.to("#loader", {
     display: "none",
   });
+  tl.from("#nav", {
+    opacity: 0,
+  });
+  tl.from(".hero h1, .hero h2", {
+    y: 120,
+    stagger: 0.2,
+  });
+}
+function cursorAnimation() {
+  document.addEventListener("mousemove", function (dets) {
+    gsap.to("#crsr", {
+      left: dets.x,
+      top: dets.y,
+    });
+  });
+  Shery.makeMagnet("#nav-part2 h4");
 }
 loader();
+cursorAnimation();

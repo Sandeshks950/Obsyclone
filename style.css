@@ -14,6 +14,18 @@ body {
   width: 100%;
 }
 
+#crsr {
+  height: 2.8vw;
+  width: 2.8vw;
+  border-radius: 50%;
+  /* background-color: white; */
+  border: 1px solid #ffffffcc;
+  position: fixed;
+  z-index: 998;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
+
 #loader {
   height: 100%;
   width: 100%;
@@ -104,4 +116,60 @@ h6 {
   height: 100vh;
   width: 100%;
   background-color: #151515;
+}
+
+#page1 #nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4vw 9vw;
+}
+
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.8vw;
+  position: relative;
+  left: 4%;
+}
+#nav-part2 h4 {
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+
+.hero {
+  /* background-color: red; */
+  width: 70%;
+  margin-left: 28%;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.hero:nth-child(2) {
+  margin-top: 12vh;
+}
+
+.hero h1 {
+  font-size: 7.4vw;
+  text-transform: uppercase;
+  line-height: 7.4vw;
+  font-weight: 500;
+}
+
+.hero h2 {
+  font-size: 7.4vw;
+  text-transform: uppercase;
+  line-height: 7.4vw;
+  font-weight: 500;
+}
+
+.hero h2:hover {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-weight: 500;
 }
