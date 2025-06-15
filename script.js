@@ -43,7 +43,7 @@ function loader() {
   tl.from("#nav", {
     opacity: 0,
   });
-  tl.from(".hero h1, .hero h2", {
+  tl.from(".hero h1 , #hero3 h2", {
     y: 120,
     stagger: 0.2,
   });
