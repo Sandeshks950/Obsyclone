@@ -316,4 +316,65 @@ h6 {
 #page5 {
   min-height: 100vh;
   width: 100%;
+  position: relative;
+}
+
+.elem {
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: 1vw;
+}
+
+.elem h1 {
+  display: inline-block;
+  font-size: 7vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 600;
+  color: transparent;
+  text-transform: uppercase;
+  margin-right: 2vw;
+  animation-name: anime;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 2vw));
+  }
+}
+
+.elem2 {
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: 1vw;
+}
+
+.elem2 h1 {
+  display: inline-block;
+  font-size: 7vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 600;
+  color: transparent;
+  text-transform: uppercase;
+  margin-right: 2vw;
+  transform: translateX(calc(-100% - 2vw));
+  animation-name: anime;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+.elem h1 span,
+.elem2 h1 span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: transparent;
 }
